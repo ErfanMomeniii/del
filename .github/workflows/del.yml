@@ -1,5 +1,3 @@
-variables:
-  REPO : "github.com/ErfanMomeniii/del"
 on:
   push:
     branches:
@@ -18,7 +16,7 @@ jobs:
           go-version: 1.17
 
       - name: Init
-        run: go mod init ${REPO}
+        run: go mod init $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
 
       - name: Tidy
         run: go mod tidy
