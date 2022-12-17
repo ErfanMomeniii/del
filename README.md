@@ -1,2 +1,2 @@
 # del
-simple library that handles event listener and event dispatcher in Go
+a simple library that handles event listener and event dispatcher that runs listener functions parallel in Go
