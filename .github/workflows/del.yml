@@ -14,13 +14,6 @@ jobs:
         uses: actions/setup-go@v2
         with:
           go-version: 1.17
-
-      - name: Init
-        run: go mod init $GITHUB_SERVER_URL/$GITHUB_REPOSITORY
-
-      - name: Tidy
-        run: go mod tidy
-
       - name: Build
         run: go build -v ./...
 
