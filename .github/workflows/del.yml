@@ -1,3 +1,5 @@
+variables:
+  REPO : "github.com/ErfanMomeniii/del"
 on:
   push:
     branches:
@@ -15,8 +17,11 @@ jobs:
         with:
           go-version: 1.17
 
-      - name: Vendor
-        run: go mod vendor -v
+      - name: Init
+        run: go mod init ${REPO}
+
+      - name: Tidy
+        run: go mod tidy
 
       - name: Build
         run: go build -v ./...
