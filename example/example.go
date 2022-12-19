@@ -13,7 +13,7 @@ func main() {
 	})
 
 	l2 := del.NewListener(func() {
-		fmt.Println("good By")
+		fmt.Println("goodbye")
 	})
 
 	e.AddListener(l1, l2)
