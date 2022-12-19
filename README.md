@@ -1,4 +1,4 @@
-
+del is a simple package that handles event listeners and an event dispatcher. it runs listeners' functions in parallel.
 # Documentation
 ## Install
 To install this package, run the following command in your project directory.
